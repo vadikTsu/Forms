@@ -1,9 +1,11 @@
 header {
   background: lightblue;
   display: flex;
+  /*flex-grow: 1;*/
   align-items: center;
   justify-content: space-around;
   height: 10vh;
+  overflow: hidden;
 }
 
 .nav-items {
@@ -30,4 +32,22 @@ header {
   border: 3px solid rgba(154, 205, 50, 0.55);
   border-radius: 15px;
 
+}
+
+
+.mobile{
+  font-size: 3rem;
+  display: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 800px) {
+  .nav-link{
+    display: none;
+  }
+
+  .mobile{
+    display: flex;
+  }
 }
